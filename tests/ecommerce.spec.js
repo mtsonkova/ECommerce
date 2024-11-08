@@ -26,7 +26,6 @@ describe('ECommerce Tests', async () => {
     context = await browser.newContext({ acceptDownloads: true });
     page = await context.newPage();
     await page.goto('/');
-    await page.waitForSelector('role=button[name="Consent"]', { timeout: 10000 });
     await page.getByRole('button', { name: 'Consent' }).click();
     loginPage = new LoginPage(page);
   });
@@ -57,7 +56,7 @@ describe('ECommerce Tests', async () => {
     });
 
     // test initially designed to fail in order to test the retry logic
-    test.skip("Try to login with invalid credentials", async () => {
+    test("Try to login with invalid credentials", async () => {
       let { email, password } = testData.invalid_credentials;
 
       await page.getByRole('link', { name: ' Signup / Login ' }).click();
