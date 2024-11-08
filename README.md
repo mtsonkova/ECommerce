@@ -1,6 +1,6 @@
 # Simple E-Commerce web site 
 
-## Automated test cases for Login module
+**Automated test cases for Login module**
 
 Framework: Playwright
 
