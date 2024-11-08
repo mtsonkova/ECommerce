@@ -56,16 +56,13 @@ describe('ECommerce Tests', async () => {
     });
 
     // test initially designed to fail in order to test the retry logic
-    test("Try to login with invalid credentials", async () => {
+    test.skip("Try to login with invalid credentials", async () => {
       let { email, password } = testData.invalid_credentials;
 
       await page.getByRole('link', { name: ' Signup / Login ' }).click();
       await loginPage.logIn(email, password);
       await expect(page.getByText(' Logout')).toBeVisible();;
     });
-
-
   })
-
 })
 
