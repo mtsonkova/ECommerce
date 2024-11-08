@@ -26,6 +26,7 @@ describe('ECommerce Tests', async () => {
     context = await browser.newContext({ acceptDownloads: true });
     page = await context.newPage();
     await page.goto('/');
+    await page.waitForSelector('role=button[name="Consent"]', { timeout: 10000 });
     await page.getByRole('button', { name: 'Consent' }).click();
     loginPage = new LoginPage(page);
   });
