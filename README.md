@@ -1,9 +1,13 @@
 # Simple E-Commerce web site 
 
 ## Automated test cases for Login module
+
 Framework: Playwright
+
 Programming Language: JavaScript
+
 Browser: Chrome latest version
+
 Reporting tool: default Html report
 
 ## Test Results
