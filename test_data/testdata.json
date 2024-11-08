@@ -1,0 +1,21 @@
+{
+    "valid_credentials": [
+        {
+            "email": "mfernandez@test.qa",
+            "password": "QaTest123"
+        },
+        {
+            "email": "rsullivan@test.qa",
+            "password": "QaTest345"
+        },
+        {
+            "email": "brogers@test.qa",
+            "password": "QaTest874"
+        }
+    ],
+    "invalid_credentials": {
+        "email": "arodriguez@test.qa",
+        "password": "TestInvalidUser",
+        "errMsg": "Your email or password is incorrect!"
+    }
+}
